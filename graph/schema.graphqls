@@ -1,0 +1,16 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type MaxSum {
+  sum: Int!,
+  positions: [Int!]!
+}
+
+input RefreshTokenInput{
+  token: String!
+}
+
+type Mutation {
+  maxsum(list: [Int!]! ): MaxSum! 
+}
